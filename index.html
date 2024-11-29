@@ -1,7 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Chiu's student portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffc0cb; /* Pink background */
+            color: #333; /* Dark text for contrast */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header-bar {
+            background-color: #333; /* Dark contrast bar */
+            color: #ffc0cb; /* Pink text */
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .intro img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contrast-bar {
+            background-color: #333; /* Dark contrast bar */
+            color: #ffc0cb; /* Pink text */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project {
+            flex: 1 1 calc(30% - 10px);
+            background-color: #fff; /* White box */
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-page {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .project-page .contrast-bar {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<header>
+    <div class="intro">
+        <img src="profile.jpg" alt="Nicole Chiu">
+        <h1>Hi, I'm Nicole Chiu.</h1>
+    </div>
+    <div class="header-bar">BSc Computer Engineering: Software Dev and Mobile Platforms Student</div>
+</header>
+
+<section class="section">
+    <h2>Who am I?</h2>
+    <div class="contrast-bar">Computer engineer student with a passion for technology and learning!</div>
+    <p>I'm a student in my second year of Computer Engineering. I have experience in programming having worked on projects focused on web development, mobile platforms and usage of agile methodologies to create functional designs.</p>
+    <p>Currently I'm learning Kotlin for Android Applications and Python for Network Programming! Have a peek below to see my work and upcoming projects!</p>
+</section>
+
+<section class="section">
+    <h2>My Work</h2>
+    <div class="projects">
+        <a href="bulletjournal.html" class="project">
+            <img src="bulletjournal.png" alt="Project 1">
+        </a>
+        <a href="database.html" class="project">
+            <img src="database.png" alt="Project 2">
+        </a>
+        <a href="connectfour.html" class="project">
+            <img src="connectfour.png" alt="Project 3">
+        </a>
+    </div>
+</section>
+
 </body>
 </html>
